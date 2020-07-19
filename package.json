@@ -1,6 +1,6 @@
 {
   "name": "docker-nginx-global-proxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easy way to keep your system-wide jwilder/nginx-proxy up and running",
   "keywords": [
     "nginx proxy"
@@ -13,12 +13,12 @@
     "nginx-proxy-up": "./bin/up.sh",
     "nginx-proxy-down": "./bin/down.sh"
   },
-  "homepage": "https://github.com/aariacarterweir/nginx-proxy-jwilder-npm",
-  "bugs": "https://github.com/aariacarterweir/nginx-proxy-jwilder-npm/issues",
+  "homepage": "https://github.com/aariacarterweir/docker-nginx-global-proxy",
+  "bugs": "https://github.com/aariacarterweir/docker-nginx-global-proxy/issues",
   "license": "MIT",
   "author": "Aaria Carter-Weir",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aariacarterweir/nginx-proxy-jwilder-npm.git"
+    "url": "https://github.com/aariacarterweir/docker-nginx-global-proxy.git"
   }
 }
