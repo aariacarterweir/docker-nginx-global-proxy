@@ -1,0 +1,24 @@
+{
+  "name": "vue-tap-away",
+  "version": "0.0.1",
+  "description": "Easy way to keep your system-wide nginx proxy up and running",
+  "keywords": [
+    "nginx proxy"
+  ],
+  "scripts": {
+    "up": "./bin/up.sh",
+    "down": "./bin/down.sh"
+  },
+  "bin": {
+    "nginx-proxy-up": "./bin/up.sh",
+    "nginx-proxy-down": "./bin/down.sh"
+  },
+  "homepage": "https://github.com/aariacarterweir/nginx-proxy-jwilder-npm",
+  "bugs": "https://github.com/aariacarterweir/nginx-proxy-jwilder-npm/issues",
+  "license": "MIT",
+  "author": "Aaria Carter-Weir",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aariacarterweir/nginx-proxy-jwilder-npm.git"
+  }
+}
