@@ -1,17 +1,17 @@
 {
   "name": "docker-nginx-global-proxy",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Easy way to keep your system-wide jwilder/nginx-proxy up and running",
   "keywords": [
-    "nginx proxy"
+    "docker global nginx proxy"
   ],
   "scripts": {
-    "up": "./bin/up.sh",
-    "down": "./bin/down.sh"
+    "up": "./src/up",
+    "down": "./src/down"
   },
   "bin": {
-    "docker-nginx-global-proxy-up": "./bin/up.sh",
-    "docker-nginx-global-proxy-down": "./bin/down.sh"
+    "docker-nginx-global-proxy-up": "./src/up",
+    "docker-nginx-global-proxy-down": "./src/down"
   },
   "homepage": "https://github.com/aariacarterweir/docker-nginx-global-proxy",
   "bugs": "https://github.com/aariacarterweir/docker-nginx-global-proxy/issues",
@@ -20,5 +20,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/aariacarterweir/docker-nginx-global-proxy.git"
+  },
+  "dependencies": {
+    "realpath": "^1.1.0"
   }
 }

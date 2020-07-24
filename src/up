@@ -1,0 +1,13 @@
+#!/bin/bash
+##########################################################################
+# credit: https://www.rent-a-hero.de/2017/06/09/use-j-wilders-nginx-proxy-for-multiple-docker-compose-projects/
+# script to check if the jwilder proxy container is already running
+# and if the ngnix-proxy network exists
+# should be called before "docker-compose up -d"
+##########################################################################
+
+DIR="$(dirname $(realpath $0))"
+
+
+
+docker-compose -f "$DIR/docker-compose.yml" --project-directory "$DIR" up -d
