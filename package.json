@@ -1,6 +1,6 @@
 {
   "name": "docker-nginx-global-proxy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Easy way to keep your system-wide jwilder/nginx-proxy up and running",
   "keywords": [
     "docker global nginx proxy"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ##########################################################################
 # credit: https://www.rent-a-hero.de/2017/06/09/use-j-wilders-nginx-proxy-for-multiple-docker-compose-projects/
 # script to check if the jwilder proxy container is already running
