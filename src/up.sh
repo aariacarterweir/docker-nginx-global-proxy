@@ -6,7 +6,11 @@
 # should be called before "docker-compose up -d"
 ##########################################################################
 
-DIR="$(dirname $(realpath $0))"
+# Get package path
+SRC_PATH="$(dirname $(realpath $0))"
+
+# Source config file
+. "$SRC_PATH/config.sh"
 
 if [ ! "$(docker network ls | grep nginx-proxy)" ]; then
   echo "Creating nginx-proxy network ..."
@@ -18,14 +22,11 @@ fi
 if [ ! "$(docker ps | grep nginx-proxy)" ]; then
 
     if [ "$(docker ps -aq -f name=nginx-proxy)" ]; then
-        # cleanup
-        echo "Cleaning Nginx Proxy ..."
-        docker rm nginx-proxy
-        docker rm nginx-proxy-letsencrypt
+      docker-compose $DOCKER_CONFIG down --remove-orphans
     fi
 
     echo "Running Nginx Proxy in global nginx-proxy network ..."
-    docker-compose -f "$DIR/docker-compose.yml" --project-directory "$DIR" up -d
+    docker-compose $DOCKER_CONFIG up -d
 
 else
   echo "Nginx Proxy already running."
