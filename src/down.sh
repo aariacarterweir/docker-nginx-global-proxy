@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Get package path
 SRC_PATH="$(dirname $(realpath $0))"
