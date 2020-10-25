@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Get package path
-SRC_PATH="$(dirname $(realpath $0))"
-
-# Source config file
-. "$SRC_PATH/config.sh"
-
 echo "----"
 echo "Stopping nginx-proxy service GLOBALLY"
 
