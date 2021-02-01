@@ -1,4 +1,7 @@
 # docker-nginx-global-proxy
+
+DEPRECATED. This library is no longer maintained. On metal docker solutions have been deprecated in favour of k8s.
+
 Easy way to keep your system-wide jwilder/nginx-proxy up and running
 
 ## Installation
